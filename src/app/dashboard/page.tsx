@@ -90,20 +90,22 @@ export default function Suggestions() {
 
   return (
     <main className="mt-2 max-w-screen-2xl m-auto h-screen p-4 md:p-6 lg:p-8">
-      <div className="inline-table justify-between sm:flex flex-row">
-        <div className="flex flex-col font-sans font-bold md:flex text-2xl">
+      <div className="flex flex-row justify-between">
+        <div className="flex flex-col font-sans font-bold text-xl md:flex lg:text-2xl">
           <p>Olá, Frank!</p>
-          <p>Acompanhe as suas últimas listas de exercícios.</p>
+          <p className="hidden md:flex">
+            Acompanhe as suas últimas listas de exercícios.
+          </p>
         </div>
-        <div className="hidden md:flex items-center">
+        <div className="flex items-center justify-center">
           <button
-            className="flex flex-row items-center align-middle rounded-md bg-blue-950 border-0 p-2 box-border h-8"
+            className="flex flex-row items-center align-middle rounded-md bg-blue-950 border-0 p-2 box-border h-8 md:w-fit m-0"
             type="button"
             onClick={handleStartStudy}
           >
             <GraduationCap className="pr-3 text-white" size={40} />
             <span className="font-sans font-bold text-white">
-              INICIAR NOVO ESTUDO
+              INICIAR ESTUDO
             </span>
           </button>
         </div>
