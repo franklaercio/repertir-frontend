@@ -14,8 +14,8 @@ export default function Home() {
     "concurseiro",
     "vestibulando",
     "universitário",
-    "coordenador de curso",
-    "secretário acadêmico",
+    "coordenador",
+    "acadêmico",
     "bibliotecário",
   ];
 
