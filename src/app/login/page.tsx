@@ -16,7 +16,7 @@ export default function Login() {
     e.preventDefault();
 
     toast.success("Login realizado com sucesso!");
-    router.push("/");
+    router.push("/dashboard");
 
     // const response = await signIn("credentials", {
     //   redirect: false,

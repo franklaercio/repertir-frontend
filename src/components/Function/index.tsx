@@ -5,7 +5,7 @@ interface CardProps {
   content: string;
 }
 
-export function CardFunction({ title, content }: CardProps) {
+export function Function({ title, content }: CardProps) {
   return (
     <div className="bg-yellow text-black px-6 py-4 max-w-fit rounded overflow-hidden shadow-lg m-3 w-full md:max-w-xs">
       <div className="font-bold text-xl mb-2">{title}</div>
