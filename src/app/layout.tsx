@@ -3,6 +3,7 @@ import { headers } from "next/headers";
 import "./globals.css";
 import Auth from "./auth";
 import { Session } from "next-auth";
+import { ToastContainer } from "react-toastify";
 
 export const metadata = {
   title: "Repetir",
@@ -27,6 +28,7 @@ export default async function RootLayout({
       <body>
         <Auth session={session}>
           <Header />
+          <ToastContainer />
           {children}
         </Auth>
       </body>

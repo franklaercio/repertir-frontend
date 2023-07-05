@@ -21,10 +21,18 @@ export function SignInButton() {
   //     <LogOut className="text-white" size={35} />
   //   </button>
   // ) : (
+  const router = useRouter();
+
+  const handleClick = (e: any) => {
+    e.preventDefault();
+    router.push("/login");
+  };
+
   return (
     <button
       className="flex flex-row items-center align-middle rounded-full bg-white border-0 p-1 box-border h-8 md:p-2"
       type="button"
+      onClick={handleClick}
     >
       <Fingerprint className="text-blue-950 md:pr-3" size={30} />
       <span className="font-sans hidden md:flex">Entrar</span>
