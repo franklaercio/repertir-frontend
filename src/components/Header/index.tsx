@@ -12,8 +12,14 @@ export function Header() {
             <Link href="/" className="pr-10">
               Página Inicial
             </Link>
-            <Link href="/suggestion/create" className="pr-10">
-              Enviar questão
+            <Link href="/category" className="pr-10">
+              Iniciar Estudo
+            </Link>
+            <Link href="/privacy" className="pr-10">
+              Política de Privacidade
+            </Link>
+            <Link href="/help" className="pr-10">
+              Suporte
             </Link>
             <Link href="/about">Sobre</Link>
           </nav>
