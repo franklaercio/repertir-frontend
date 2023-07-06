@@ -30,12 +30,12 @@ export function SignInButton() {
 
   return (
     <button
-      className="flex flex-row items-center align-middle rounded-full bg-white border-0 p-1 box-border h-8 md:p-2"
+      className="flex flex-row items-center align-middle rounded-full bg-white border-0 box-border h-8 p-2"
       type="button"
       onClick={handleClick}
     >
-      <Fingerprint className="text-blue-950 md:pr-3" size={30} />
-      <span className="font-sans hidden md:flex">Entrar</span>
+      <Fingerprint className="text-blue-950 pr-3" size={30} />
+      <span className="font-sans">Entrar</span>
     </button>
   );
 }

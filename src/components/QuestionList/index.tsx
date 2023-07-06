@@ -26,7 +26,7 @@ export default function QuestionList({ questions }: QuestionProps) {
           <div className="text-slate-100 text-base font-serif text-justify">
             {question.content}
             <hr className="mt-4 mb-4" />
-            <div className="inline-table font-mono font-bold md:flex flex-row">
+            <div className="inline-table font-sans font-bold md:flex flex-row">
               <div className="flex col mr-4 md:mr-6">
                 <User className="text-white mr-2" size="20" />
                 {question.userName}

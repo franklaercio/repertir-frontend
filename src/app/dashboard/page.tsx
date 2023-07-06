@@ -55,7 +55,7 @@ export default function Suggestions() {
 
   const handleStartStudy = async (e: any) => {
     toast.info("Selecione uma categoria");
-    router.push("/");
+    router.push("/category");
   };
 
   const data: Question[] = [
@@ -89,7 +89,7 @@ export default function Suggestions() {
   ];
 
   return (
-    <main className="mt-2 max-w-screen-2xl m-auto h-screen p-4 md:p-6 lg:p-8">
+    <main className="mt-2 max-w-screen-xl m-auto h-screen p-4 md:p-6 lg:p-8">
       <div className="flex flex-row justify-between">
         <div className="flex flex-col font-sans font-bold text-xl md:flex lg:text-2xl">
           <p>Olá, Frank!</p>
@@ -99,7 +99,7 @@ export default function Suggestions() {
         </div>
         <div className="flex items-center justify-center">
           <button
-            className="flex flex-row items-center align-middle rounded-md bg-blue-950 border-0 p-2 box-border h-8 md:w-fit m-0"
+            className="flex flex-row items-center align-middle rounded-md bg-blue-950 hover:bg-sky-800 border-0 p-2 box-border h-8 md:w-fit m-0"
             type="button"
             onClick={handleStartStudy}
           >

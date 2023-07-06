@@ -36,7 +36,7 @@ export default function Home() {
           <div className="flex flex-row justify-center">
             <div className="mr-3">Todo</div>
             <motion.div
-              animate={{ y: [-10, 10] }}
+              animate={{ y: [-5, 5] }}
               transition={{ repeat: Infinity, duration: 2 }}
             >
               <div className="text-sky-700">{user}</div>
