@@ -53,20 +53,24 @@ export default function Help() {
   ];
 
   return (
-    <>
-      <div className="container mx-auto p-8 h-screen">
-        <h1 className="text-2xl font-bold mb-4">
-          Principais Problemas dos Usuários
-        </h1>
-        {problems.map((problem) => (
-          <div key={problem.id} className="bg-white shadow-md rounded-lg mb-4">
-            <h3 className="text-lg font-semibold mb-2">{problem.title}</h3>
-            <p>Problema: {problem.description}</p>
-            <p>Resolução: {problem.resolution}</p>
-          </div>
-        ))}
-      </div>
-      <Footer />
-    </>
+    <main className="flex h-screen flex-col justify-start">
+      <section className="min-h-full p-2">
+        <div className="container mx-auto p-8">
+          <h1 className="text-2xl font-bold mb-4">
+            Principais Problemas dos Usuários
+          </h1>
+          {problems.map((problem) => (
+            <div
+              key={problem.id}
+              className="bg-white shadow-md rounded-lg mb-4"
+            >
+              <h3 className="text-lg font-semibold mb-2">{problem.title}</h3>
+              <p>Problema: {problem.description}</p>
+              <p>Resolução: {problem.resolution}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    </main>
   );
 }

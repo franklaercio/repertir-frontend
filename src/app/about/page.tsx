@@ -79,7 +79,6 @@ export default function About() {
             promovendo a troca de conhecimento entre os usuários.
           </p>
         </div>
-        <Footer />
       </>
     );
   }
